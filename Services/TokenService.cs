@@ -17,9 +17,9 @@ public static class TokenService
         // Criação do token
         var tokenDescriptor = new SecurityTokenDescriptor
         {
-            Subject = new System.Security.Claims.ClaimsIdentity(new[]
+            Subject = new ClaimsIdentity(new[]
             {
-                new Claim(ClaimTypes.Name, user.Username), // User.Identity.Name
+                new Claim(ClaimTypes.Name, user .Username), // User.Identity.Name
                 new Claim(ClaimTypes.Role, user.Role) // User.Identity.IsInRole
 
             }),
