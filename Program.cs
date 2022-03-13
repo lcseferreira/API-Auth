@@ -19,7 +19,7 @@ builder.Services.AddAuthentication(x =>
 })
 .AddJwtBearer(x =>
 {
-    x.RequireHttpsMetadata = false;
+    x.RequireHttpsMetadata = false; 
     x.SaveToken = true;
     x.TokenValidationParameters = new TokenValidationParameters
     {
